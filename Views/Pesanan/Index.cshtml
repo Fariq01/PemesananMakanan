@@ -1,0 +1,65 @@
+@model IEnumerable<PemesananMakanan.Models.Pesanan>
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-4">
+            <h2 class="text-primary">
+                Daftar Pesanan
+            </h2>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>
+            Gambar
+        </th>
+        <th>
+            Pesanan
+        </th>
+        <th>
+            Nama Makanan
+        </th>
+        <th>
+            Quantity
+        </th>
+        <th>
+            Harga
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach(var pesanan in Model)
+        {
+            foreach(var pesan in pesanan.Pesan)
+            {
+                <tr>
+                <td style="width: 50px;">
+                    <div class="lead">
+                        <div class="lead-image">
+                            <img src="@pesan.Makanan.PicturePath" alt="" />
+                        </div>
+                    </div>
+                </td>
+                <td>@pesan.PesananId</td>
+                <td>@pesan.Makanan.MakananNama</td>
+                <td>@pesan.Quantity</td>
+                <td>@pesan.SubTotal</td>
+             
+                </tr>
+            }
+            <tr>
+                <td> 
+                    <form action="/Pesanan/DeletePesanan" method="post">
+                        <input type="hidden" name="id" value="@pesanan.pesananId"/>
+                        <button type="submit">Hapus dari Pesanan</button>
+                    </form>
+                </td>
+                <td>Total Harga = @pesanan.TotalHarga</td>
+            </tr>
+         
+        }
+    </tbody>
+</table>
+</div>

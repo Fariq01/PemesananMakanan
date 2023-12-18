@@ -12,6 +12,10 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+.btn:focus{
+  outline: none;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -19,4 +23,17 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+
+.lead-image {
+    width: 80px;  /* Lebar elemen pembungkus */
+    height: 70px;  /* Tinggi elemen pembungkus */
+    overflow: hidden;  /* Potong bagian gambar yang keluar dari batas */
+}
+
+.lead-image img {
+    width: 100%;  /* Lebar gambar */
+    height: 100%;  /* Tinggi gambar */
+    object-fit: cover;  /* Menjaga aspek rasio gambar */
 }

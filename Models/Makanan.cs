@@ -13,13 +13,14 @@ public class Makanan
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
     public int MakananId {get; set;}
 
     [Required]
-    public string MakananNama {get; set;}
-    public float Harga {get; set;}
 
+    [StringLength(20)]
+    public string? MakananNama {get; set;}
+    public float Harga {get; set;}
+    public string? PicturePath{get; set;}
 }
 
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\PemesananMakanan\\PemesananMakanan.csproj": {}
+    "C:\\PemesananMakanan\\PemesananMakanan.csproj": {}
   },
   "projects": {
-    "c:\\PemesananMakanan\\PemesananMakanan.csproj": {
+    "C:\\PemesananMakanan\\PemesananMakanan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\PemesananMakanan\\PemesananMakanan.csproj",
+        "projectUniqueName": "C:\\PemesananMakanan\\PemesananMakanan.csproj",
         "projectName": "PemesananMakanan",
-        "projectPath": "c:\\PemesananMakanan\\PemesananMakanan.csproj",
+        "projectPath": "C:\\PemesananMakanan\\PemesananMakanan.csproj",
         "packagesPath": "C:\\Users\\7ix\\.nuget\\packages\\",
-        "outputPath": "c:\\PemesananMakanan\\obj\\",
+        "outputPath": "C:\\PemesananMakanan\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\7ix\\AppData\\Roaming\\NuGet\\NuGet.Config"

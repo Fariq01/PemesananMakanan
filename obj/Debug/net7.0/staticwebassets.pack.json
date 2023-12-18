@@ -13,6 +13,46 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\EsTeh.jpg",
+      "PackagePath": "staticwebassets\\images\\EsTeh.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\Josu.jpg",
+      "PackagePath": "staticwebassets\\images\\Josu.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\KulitAyamGoreng.jpg",
+      "PackagePath": "staticwebassets\\images\\KulitAyamGoreng.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\MartabakDuren.jpg",
+      "PackagePath": "staticwebassets\\images\\MartabakDuren.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\NasgorMentega.jpg",
+      "PackagePath": "staticwebassets\\images\\NasgorMentega.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\OmuRice.jpg",
+      "PackagePath": "staticwebassets\\images\\OmuRice.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\TehTarik.jpg",
+      "PackagePath": "staticwebassets\\images\\TehTarik.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\TelorDadar.jpg",
+      "PackagePath": "staticwebassets\\images\\TelorDadar.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\indomie.jpg",
+      "PackagePath": "staticwebassets\\images\\indomie.jpg"
+    },
+    {
+      "Id": "C:\\PemesananMakanan\\wwwroot\\images\\telorCeplok.jpg",
+      "PackagePath": "staticwebassets\\images\\telorCeplok.jpg"
+    },
+    {
       "Id": "C:\\PemesananMakanan\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

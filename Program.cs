@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using PemesananMakanan.Data;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 var app = builder.Build();
 
@@ -13,6 +21,18 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Hapus semua data dari tabel Pesans
+// using (var scope = app.Services.CreateScope())
+// {
+//     var _db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+//     var pesanan = _db.Pesanans.ToList();
+//     foreach (var p in pesanan)
+//     {
+//         _db.Pesanans.Remove(p);
+//     }
+//     _db.SaveChanges();
+// }
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -22,6 +42,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Makanan}/{action=Index}/{id?}");
 
 app.Run();
